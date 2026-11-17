@@ -1,1 +1,177 @@
-:root{--ink:#202725;--muted:#69736e;--accent:#c6e2cf;--surface:#f3f5ef}body{color:var(--ink);font-family:system-ui,-apple-system,"Segoe UI",sans-serif}a{color:inherit}.brand{font-weight:750;letter-spacing:-.04em}.brand-mark{display:inline-flex;align-items:center;justify-content:center;background:var(--ink);color:white;border-radius:50%;width:36px;height:36px;margin-right:8px}.navbar .nav-link{font-size:.93rem;color:#5f6864}.navbar .nav-link.active{color:#16221c;font-weight:700}.hero{background:#f2f5ef;padding:4rem 0}.hero h1,.page-intro h1{font-size:clamp(2.5rem,5vw,4.7rem);font-weight:750;letter-spacing:-.065em;line-height:1.05}.hero h1 span{color:#6e8c79}.hero-copy{padding-right:3rem}.hero-image{width:100%;height:460px;object-fit:cover;border-radius:8px}.eyebrow{font-size:.7rem;letter-spacing:.14em;font-weight:750;color:#71877a}.hero-note,.count-label{font-size:.7rem;letter-spacing:.13em;color:#89958c;font-weight:700}.section-space{padding:5rem 0}.section-title{font-size:clamp(2rem,3vw,3rem);font-weight:700;letter-spacing:-.05em}.text-link{text-decoration:none;font-weight:650;border-bottom:1px solid #90a599;padding-bottom:.2rem}.product-card{border:1px solid #e6eae5;border-radius:8px;overflow:hidden}.product-img{display:block;background:#f2f4ef;padding:2.5rem;aspect-ratio:4/3}.product-img img{width:100%;height:100%;object-fit:contain}.card-body{padding:1.5rem}.card-text{font-size:.92rem;line-height:1.6}.price{font-size:1.2rem;white-space:nowrap}.btn{border-radius:4px;font-weight:600}.btn-dark{background:#24342a;border-color:#24342a}.btn-dark:hover{background:#405b49;border-color:#405b49}.btn-lg{font-size:.95rem;padding:.85rem 1.25rem}.feature-banner{background:#31483b;color:#fff;padding:2.5rem 3rem;border-radius:8px;display:flex;align-items:center;justify-content:space-between;gap:2rem}.feature-banner .eyebrow{color:#bdd2c1}.feature-banner h2{letter-spacing:-.04em}.site-footer{padding:2rem 0;background:#1d2b22;color:#dbe6dd;font-size:.85rem}.page-intro{background:#f2f5ef;padding:4rem 0 3rem}.page-intro h1{font-size:clamp(2.5rem,5vw,4rem)}.count-label{display:block;margin-top:1rem}.detail-image{background:#f2f4ef;border-radius:8px;padding:4rem;aspect-ratio:1;display:flex;align-items:center}.detail-image img{width:100%;max-height:100%;object-fit:contain}.detail-price{font-size:2rem;font-weight:700;margin:1.5rem 0}.breadcrumb{font-size:.9rem}.breadcrumb a{text-decoration:none}.form-panel,.order-summary{padding:2rem;border:1px solid #e2e8e1;border-radius:8px;background:white}.order-summary{background:#f2f5ef;border:0}.form-control,.form-select{padding:.7rem;border-color:#ced8d0}.form-label{font-weight:600;font-size:.9rem}.table th{font-weight:500;color:#69736e}.table td{text-align:right}.summary-image{width:70px;height:70px;object-fit:contain;background:white;border-radius:4px;padding:.5rem}@media(max-width:991px){.hero-copy{padding-right:.75rem}.hero-image{height:350px}}@media(max-width:575px){.hero{padding:3rem 0}.hero-image{height:270px}.section-space{padding:3.5rem 0}.feature-banner{padding:2rem;align-items:flex-start;flex-direction:column}.detail-image{padding:2rem}.form-panel,.order-summary{padding:1.3rem}}
+/* Общие стили дополняют компоненты Bootstrap. */
+body {
+  color: #222;
+  font-family: Arial, sans-serif;
+}
+a {
+  color: #0057b8;
+}
+.brand {
+  font-weight: 700;
+  color: #222;
+}
+.brand-mark {
+  display: none;
+}
+.navbar .nav-link {
+  color: #444;
+}
+.navbar .nav-link.active {
+  color: #222;
+  font-weight: 700;
+}
+
+/* Как в первой работе: фотография занимает первый экран целиком. */
+.hero {
+  min-height: calc(100vh - 72px);
+  display: flex;
+  align-items: center;
+  padding: 4rem 0;
+  color: #fff;
+  text-align: center;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+    url("images/hero.jpg") center / cover no-repeat;
+}
+.hero-content {
+  max-width: 850px;
+}
+.hero h1 {
+  font-size: clamp(2rem, 4vw, 2.75rem);
+  font-weight: 700;
+  line-height: 1.2;
+}
+.hero p {
+  max-width: 36rem;
+  margin: 1rem auto 2rem;
+  font-size: 1.125rem;
+}
+.section-space {
+  padding: 3.5rem 0;
+}
+.section-title {
+  font-size: 2rem;
+  font-weight: 700;
+}
+.eyebrow {
+  color: #666;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+.text-link {
+  font-weight: 600;
+}
+.product-card {
+  border-color: #ddd;
+  overflow: hidden;
+}
+.product-img {
+  display: block;
+  background: #f2f2f2;
+  padding: 2rem;
+  aspect-ratio: 4 / 3;
+}
+.product-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.card-body {
+  padding: 1.25rem;
+}
+.price {
+  font-size: 1.1rem;
+  white-space: nowrap;
+}
+.btn {
+  font-weight: 600;
+}
+.info-block {
+  padding: 1.5rem;
+  border-left: 4px solid #0057b8;
+  background: #f2f2f2;
+}
+.info-block h2 {
+  font-size: 1.5rem;
+}
+.site-footer {
+  padding: 2rem 0;
+  background: #f2f2f2;
+  color: #333;
+  font-size: 0.9rem;
+}
+.page-intro {
+  background: #f2f2f2;
+  padding: 3rem 0;
+}
+.page-intro h1 {
+  font-size: clamp(2rem, 4vw, 2.75rem);
+  font-weight: 700;
+}
+.count-label {
+  display: block;
+  margin-top: 1rem;
+  color: #666;
+  font-size: 0.8rem;
+}
+.detail-image {
+  background: #f2f2f2;
+  border-radius: 4px;
+  padding: 3rem;
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+}
+.detail-image img {
+  width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+.detail-price {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 1.5rem 0;
+}
+.form-panel,
+.order-summary {
+  padding: 2rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background: #fff;
+}
+.order-summary {
+  background: #f7f7f7;
+}
+.form-control,
+.form-select {
+  padding: 0.7rem;
+}
+.form-label {
+  font-weight: 600;
+}
+.table td {
+  text-align: right;
+}
+.summary-image {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+  background: white;
+  border-radius: 4px;
+  padding: 0.5rem;
+}
+@media (max-width: 575px) {
+  .hero {
+    padding: 3rem 0;
+  }
+  .section-space {
+    padding: 2.5rem 0;
+  }
+  .detail-image {
+    padding: 2rem;
+  }
+  .form-panel,
+  .order-summary {
+    padding: 1.25rem;
+  }
+}
