@@ -46,7 +46,7 @@ if (productName) {
   document.getElementById("product-description").textContent = item.description;
   document.getElementById("product-price").textContent = `${item.price} ₽`;
   const picture = document.getElementById("product-image");
-  picture.src = `images/${id}.svg`;
+  picture.src = `images/${id}-photo.png`;
   picture.alt = item.name;
   document.getElementById("product-order").href = `order.html?product=${id}`;
   const specs = document.getElementById("product-specs");
@@ -81,7 +81,7 @@ if (form) {
     const row = document.createElement("div");
     row.className = "d-flex align-items-center gap-3 mt-3";
     const img = document.createElement("img");
-    img.src = `images/${select.value}.svg`;
+    img.src = `images/${select.value}-photo.png`;
     img.alt = "";
     img.className = "summary-image";
     const info = document.createElement("div");
