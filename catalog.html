@@ -163,14 +163,25 @@
         ><span>Аксессуары для рабочего места · 2026</span>
       </div>
       <div class="container mt-3">
-        <details class="surprise" id="surprise">
-          <summary>Небольшой сюрприз</summary>
-          <img
-            src="images/surprise.png"
-            alt="Розовые розы и надпись: «Пусть в вашем доме всегда играет Династия!»"
-            loading="lazy"
-          />
-        </details>
+        <div class="surprise" id="surprise">
+          <button
+            class="btn btn-outline-secondary btn-sm"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#surprise-content"
+            aria-expanded="false"
+            aria-controls="surprise-content"
+          >
+            Небольшой сюрприз
+          </button>
+          <div class="collapse" id="surprise-content">
+            <img
+              src="images/surprise.png"
+              alt="Розовые розы и надпись: «Пусть в вашем доме всегда играет Династия!»"
+              loading="lazy"
+            />
+          </div>
+        </div>
       </div>
     </footer>
   </body>
